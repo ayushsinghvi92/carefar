@@ -1,0 +1,16 @@
+branch-defaults:
+  master:
+    environment: carefar
+environment-defaults:
+  carefar:
+    branch: null
+    repository: null
+global:
+  application_name: carefar
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Node.js
+  default_region: us-west-2
+  profile: eb-cli
+  repository: null
+  sc: git
