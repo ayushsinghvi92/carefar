@@ -13,7 +13,7 @@ app.config(function ($urlRouterProvider, $locationProvider) {
 });
 
 // This app.run is for listening to errors broadcasted by ui-router, usually originating from resolves
-app.run(function ($rootScope) {
+app.run(function ($rootScope, $window) {
     $window.ga('create', 'UA-85556846-1', 'auto');
     $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, thrownError) {
         console.info('The following error was thrown by ui-router while transitioning to state "${toState.name}". The origin of this error is probably a resolve function:');

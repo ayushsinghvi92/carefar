@@ -98,6 +98,8 @@ p{
 
 .header{
 	text-align:center;
+	color: white;
+   	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	background:url(../img/happyGranny.jpg) left top no-repeat;
 	padding:280px 0;
 	background-size: 100% auto;
@@ -113,7 +115,6 @@ p{
 	font-weight:400;
 	letter-spacing: -1px;
 	margin:0 0 22px 0 ;
-	color:#d80707;
 }
 
 .we-create{
@@ -127,7 +128,6 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:32px;
-	color: #d80707;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;

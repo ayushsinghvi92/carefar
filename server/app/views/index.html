@@ -69,7 +69,7 @@
     <div class="container">
         <h2>Carefar provide remote monitoring of elderly loved ones and alerts family and friends when it detects a fall.</h2>
         <h6>Someone 65+ falls every 2.3 seconds.</h6>
-        <div id="products" class="row list-group">
+        <div id="products" class="row list-group" ng-controller='gridCtrl'>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
                     <div class="caption">
@@ -79,7 +79,7 @@
                             No need to purchase, install and figure out how to use additional hardware. We use the phone's GPS and accelerometer to detect when the person falls. </p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">How does this work?</a>
+                                <a class="btn btn-success" ng-click='openModal("fallDetection")'>How does this work?</a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                             When a fall is detected, a 2 minute clock will count down in case the phone was simply dropped and the user and disarm the app.  However, if something did happen, family and other caregivers will be notified. </p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Are there limits?</a>
+                                <a class="btn btn-success" ng-click='openModal("notifyFamily")'> Are there limits?</a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                             If the elder is in a situation where they can't make a call but need to alert family, they can also open the app and press the alert button directly commuicate to the family</p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Why would this help?</a>
+                                <a class="btn btn-success" ng-click='openModal("emergencyButton")'>Why would this help?</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                             Getting CareFar is as simple as installing the app and adding family and caregivers that need to be notified.  The app will run in the background after launch and provides continuous monitoring</p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Will this drain the phone's battery?</a>
+                                <a class="btn btn-success" ng-click='openModal("easeOfUse")'>Will this drain the phone's battery?</a>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             Whethher it's because your family is far away, or simply beacuse you need a night out, CareFar provides you peace of mind that you will be notified if the elder has fallen or needs help</p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">How will caregivers be notified?</a>
+                                <a class="btn btn-success" ng-click='openModal("coverage")'>How will caregivers be notified?</a>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                         </p>
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <a class="btn btn-success" href="http://www.jquery2dotnet.com">Are there PRO features?</a>
+                                <a class="btn btn-success" ng-click='openModal("free")'>Are there PRO features?</a>
                             </div>
                         </div>
                     </div>
@@ -377,30 +377,6 @@ $(window).on('load',function(){
       columnWidth: colW
     }
   });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            
-            filter: selector,
-         });
-         return false;
-    });
   
 });
 
