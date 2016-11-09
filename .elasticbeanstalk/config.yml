@@ -1,14 +1,15 @@
 branch-defaults:
   master:
-    environment: carefar
+    environment: caretestexpress
+    group_suffix: null
 environment-defaults:
-  carefar:
+  caretestexpress:
     branch: null
     repository: null
 global:
-  application_name: carefar
+  application_name: caretest
   branch: null
-  default_ec2_keyname: aws-eb
+  default_ec2_keyname: null
   default_platform: Node.js
   default_region: us-west-2
   profile: eb-cli
