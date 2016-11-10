@@ -3,11 +3,12 @@ app.controller('modalCtrl', function (content, $scope) {
 })
 
 app.controller('gridCtrl', function ($scope, $uibModal) {	
-
-	$scope.openModal = function () {
+	var findContent = function (parentName) {
+		return allContent[parentName]
+	}
+	$scope.openModal = function (parentName) {
 		$uibModal.open({
-			templateUrl: 'js/grid/modalContent.html'
-			},
+			templateUrl: 'js/grid/modalContent.html',
 			controller: 'modalCtrl'
 		})
 	}
