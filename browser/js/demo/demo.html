@@ -1,1 +1,15 @@
-<h1>Hello World</h1>
+<div id='classCategoryMenu' class='menu col-xs-3'>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("Live")' class='btn btn-primary'>Live Classes</button>
+	</div>
+	<div class='row'>
+		<button ng-click='changeClassCategory("On-Demand")' type='button' class='btn btn-primary'>On-Demand</button>
+	</div>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("Trainer")'class='btn btn-primary'>Trainers</button>
+	</div>
+</div>
+<div id='classDisplay' class='col-xs-9'>
+	<h1>{{classCategory}} Classes</h1>
+	<div ui-view></div>
+</div>
