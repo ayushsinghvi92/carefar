@@ -1,0 +1,25 @@
+<div id='typeMenu' class='row'>
+	<div class='col-xs-4'>
+		<button ng-click='sortByType()' type='button' class='btn btn-success'>All</button>
+	</div>
+	<div class='col-xs-4'>
+		<button ng-click='sortByType("Chair")' type='button' class='btn btn-info'>Chair</button>
+	</div>
+	<div class='col-xs-4'>
+		<button ng-click='sortByType("Yoga")' type='button' class='btn btn-info'>Yoga</button>
+	</div>
+	<div class='col-xs-4'>
+		<button ng-click='sortByType("Fall")'type='button' class='btn btn-info'>Balance</button>
+	</div>
+	<div class='col-xs-4'>
+		<button ng-click='sortByType("Tai Chi")' type='button' class='btn btn-info'>Tai-Chi</button>
+	</div>
+</div>
+
+<div id='videos' class='row list-group'>
+	<div class="class col-xs-2 btn" ng-repeat='class in classes'>
+		<h3 class='wordwrap'>{{class.Title}}</h3>
+		<div><img src={{class.ImageUrl}}></div>
+		<a class='btn' href={{class.Youtube}}>Watch Video</a>
+	</div>
+</div>

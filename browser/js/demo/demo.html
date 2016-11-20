@@ -1,0 +1,24 @@
+<div class='col-xs-12 container demoHead'>
+	<h2>{{classCategory}} Classes</h2>
+	<button type='button' id='supportButton' class='btn btn-success col-xs-2'>24/7 Live Support</button>
+</div>
+<div id='classCategoryMenu' class='menu col-xs-3'>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("Live")' class='btn btn-primary'>Live Classes</button>
+	</div>
+	<div class='row'>
+		<button ng-click='changeClassCategory("On-Demand")' type='button' class='btn btn-primary'>On-Demand</button>
+	</div>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("Trainer")'class='btn btn-primary'>Trainers</button>
+	</div>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("PT")'class='btn btn-primary'>Physcial Therapist</button>
+	</div>
+	<div class='row'>
+		<button type='button' ng-click='changeClassCategory("Friend")'class='btn btn-primary'>Friends</button>
+	</div>
+</div>
+<div id='classDisplay' class='col-xs-9'>
+	<div ui-view></div>
+</div>

@@ -1,0 +1,152 @@
+#classCategoryMenu {
+	button {
+		padding: 30px 15px 30px 15px;
+		margin: 10px 0 10px 0;
+		width: 100%;
+		font-size: 18px;
+		background-color: #303F9F;
+	}
+}
+#typeMenu {
+	padding: 15px 15px 15px 15px;
+	margin: 10px 10px 10px 10px;
+	width: 100%;
+}
+
+.class {
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	border: 2px;
+	min-height: 200px;
+	float:left;
+	background-color:#3f51b5;
+
+	img {
+		transform: scale(.9);
+	}
+
+	h3 {
+		color: white;
+	}
+	a {
+		margin-top: 5px;
+	} 
+	.btn {
+		background-color: #FF4081;
+		color: white;
+	}
+
+}
+
+#videos {
+	margin-left: 10px;
+}
+
+// Typefaces
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,700';
+
+// Colors
+
+// Styles
+body {
+	background: #C5CAE9;
+}
+
+#leaderboard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Leaderboard {
+	font-family: 'Roboto Mono', monospace;
+	width: 100%;
+	background: white;
+	box-shadow: 0 8px 13px -8px rgba(black, .2);
+	
+	.Title {
+		padding: 20px;
+		background: #FF4081;
+		color: white;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	ul {
+		padding: 20px;
+	}
+	
+	.Person {
+		align-items: center;
+		background-size: cover;
+		display: flex;
+		margin-bottom: 10px;
+		
+		&:first-child {
+			margin-bottom: 15px;
+			.Image {
+				transform: scale(1.15);
+			}
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+			width: 100%;
+		}
+		
+		.Image {
+			height: 44px;
+			width: 44px;
+			background: orange;
+			border-radius: 44px;
+			transform: scale(.9);
+		}
+		
+		.Name {
+			margin-left: 10px;
+		}
+		
+		.Score {
+			margin-left: auto;
+			font-weight: 700;
+		}
+	}
+	
+}
+
+#supportButton {
+	float: right;
+}
+
+#typeMenu button {
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+	border: 2px;
+	width: 100%;
+	font-size: 18px;
+}
+
+.demoHead {
+	background-color: #3F51B5;
+	margin-bottom: 15px;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	text-align: left;
+	h2 {
+		color:white;
+		margin:auto;
+		display: inline;
+	}
+}
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+.fc-content {
+	font-size: 24px;
+}
