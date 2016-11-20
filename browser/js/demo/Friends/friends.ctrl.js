@@ -14,6 +14,9 @@ app.controller('FriendsController', function ($scope, $state, $http) {
 		$scope.nearby = data;
 		console.log($scope.nearby[1])
 	})
+
+	$scope.findAge = findAge;
+	$scope.findDistance = findDistance;
 })
 
 
@@ -61,10 +64,13 @@ function findName () {
 }
 
 function findDistance () {
-	return Math.random() * 10 + ' Miles Away'
+	return Math.round(Math.random() * 10) + ' Miles Away'
 }
 
 function findAge (person) {
-	return 62;
+	var birthday = new Date(person.dob)
+	var age = 2016 - birthday.getFullYear();
+	return age + ' Years Young';
 }
+
 

@@ -3,28 +3,19 @@
 	<button ng-click = "findNearby()" class='btn btn-primary'>Find Nearby</button>
 </div>
 
-	<div id="container" ng-repeat="person in nearby" >
-		<div class="twitter-wrapper">
-			<div class="twitter-widget">
-				<div class="user-info">
-					<img src="{{person.picture.thumbnail}}" alt="avatar" />
-					<p>{{person.name.first}}</p>
-					<span>New York, NY</span>
-				</div>
-				<div class="stats">
-					<p><span>2,3k</span>tweets</p>
-					<p><span>326</span>following</p>
-					<p><span>752</span>followers</p>
-				</div>
-				<span>2</span>
-				<div class="corner"></div>
+<div id="container" class='row col-xs-4 nearby' ng-repeat="person in nearby" >
+	<div class="twitter-wrapper">
+		<div class="twitter-widget row">
+			<div class="user-info col-xs-4">
+				<img src="{{person.picture.medium}}" alt="avatar" />
 			</div>
-			<div class="compose-card">
-				<form name="twitter-form" method="post" action="">
-					<input type="text" placeholder="Compose new tweet" /> 
-				</form>
+			<div class="stats col-xs-8">
+				<p>{{person.name.first}}</p>
+				<span>New York, NY</span>
+				<p>{{findAge(person)}}</p>
+				<p><span>{{findDistance()}}</span></p>
 			</div>
 		</div>
+	</div>
 </div>
 
-<h1>No one currently near you</h1>
