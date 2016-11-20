@@ -1,4 +1,4 @@
-app.controller('FriendsController', function ($scope, $state) {
+app.controller('FriendsController', function ($scope, $state, $http) {
 	$scope.friends = friends.sort(compare);
 	$scope.findNearby = function () {
 		$state.go('demo.nearby')
@@ -6,7 +6,16 @@ app.controller('FriendsController', function ($scope, $state) {
 	$scope.leaderboard = function () {
 		$state.go('demo.Friend')
 	}
+	$http.get('https://randomuser.me/api/?results=50&gender=female')
+	.then(function (result) {
+		return result.data.results
+	})
+	.then(function (data) {
+		$scope.nearby = data;
+		console.log($scope.nearby[1])
+	})
 })
+
 
 function compare(a,b) {
   if (a.score < b.score)
@@ -55,7 +64,7 @@ function findDistance () {
 	return Math.random() * 10 + ' Miles Away'
 }
 
-function findAge () {
-	return Math.random() * 100 + ' Years Young'
+function findAge (person) {
+	return 62;
 }
 
