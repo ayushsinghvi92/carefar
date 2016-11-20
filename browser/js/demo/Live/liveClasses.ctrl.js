@@ -14,11 +14,11 @@ app.controller('LiveController', function ($scope, $compile, uiCalendarConfig) {
     };
     /* event source that contains custom events on the scope */
     $scope.events = [
-			      {title: 'Tai Chi',start: new Date(y, m, d), url:'http://google.com'},
-			      {title: 'Aerobics with Richard',start: new Date(y, m, d),end: new Date(y, m, d - 2)},
-			      {id: 999,title: 'Chair Exercises with Clair',start: new Date(y, m, d, 16, 0),allDay: false},
+			      {title: 'Tai Chi',start: new Date(y, m, d, 9), url:'http://google.com'},
+			      {title: 'Aerobics with Richard',start: new Date(y, m, d, 11),end: new Date(y, m, d - 2)},
+			      {id: 999,title: 'Chair Exercises with Clair',start: new Date(y, m, d, 14, 0),allDay: false},
 			      {id: 999,title: 'Balance with John',start: new Date(y, m, d, 16, 0),allDay: false},
-			      {title: 'Yoga with Peter',start: new Date(y, m, d, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
+			      {title: 'Yoga with Peter',start: new Date(y, m, d, 19, 0),allDay: false},
 			    ];
     /* event source that calls a function on every view switch */
     $scope.eventsF = function (start, end, timezone, callback) {
