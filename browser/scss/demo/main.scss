@@ -16,6 +16,16 @@
 	padding: 10px 10px 10px 10px;
 	margin: 10px 10px 10px 10px;
 	border: 2px;
+	min-height: 200px;
+	float:left;
+	background-color:#3f51b5;
+
+	h3 {
+		color: white;
+	},
+	a {
+		margin-top: 5px;
+	}
 }
 
 #videos {
@@ -36,18 +46,18 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 }
 
 .Leaderboard {
 	font-family: 'Roboto Mono', monospace;
-	width: 80%;
-	background: #FFFFFF;
+	width: 100%;
+	background: white;
 	box-shadow: 0 5px 10px -5px rgba(black, .2);
+	
 	
 	.Title {
 		padding: 20px;
-		background: #121212;
+		background: #FF4081;
 		color: white;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -102,9 +112,10 @@ body {
 
 #typeMenu button {
 	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 10px;
+	margin-bottom: 10px;
 	border: 2px;
 	width: 100%;
+	font-size: 18px;
 }
 
 .demoHead {
@@ -118,4 +129,11 @@ body {
 		margin:auto;
 		display: inline;
 	}
+}
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
 }
