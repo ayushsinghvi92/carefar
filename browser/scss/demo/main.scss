@@ -4,6 +4,7 @@
 		margin: 10px 0 10px 0;
 		width: 100%;
 		font-size: 18px;
+		background-color: #303F9F;
 	}
 }
 #typeMenu {
@@ -22,10 +23,15 @@
 
 	h3 {
 		color: white;
-	},
+	}
 	a {
 		margin-top: 5px;
+	} 
+	.btn {
+		background-color: #FF4081;
+		color: white;
 	}
+
 }
 
 #videos {
@@ -52,8 +58,7 @@ body {
 	font-family: 'Roboto Mono', monospace;
 	width: 100%;
 	background: white;
-	box-shadow: 0 5px 10px -5px rgba(black, .2);
-	
+	box-shadow: 0 8px 13px -8px rgba(black, .2);
 	
 	.Title {
 		padding: 20px;
