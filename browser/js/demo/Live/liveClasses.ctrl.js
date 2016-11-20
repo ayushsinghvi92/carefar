@@ -14,7 +14,7 @@ app.controller('LiveController', function ($scope, $compile, uiCalendarConfig) {
     };
     /* event source that contains custom events on the scope */
     $scope.events = [
-			      {title: 'All Day Event',start: new Date(y, m, 1)},
+			      {title: 'All Day Event',start: new Date(y, m, 1), url:'http://google.com'},
 			      {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
 			      {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
 			      {id: 999,title: 'Repeating Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
@@ -39,6 +39,13 @@ app.controller('LiveController', function ($scope, $compile, uiCalendarConfig) {
           {type:'party',title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
         ]
     };
+
+    $scope.eventClick = function (event) {
+      if(event.url) {
+        window.open(event.url);
+        return false;
+      }
+    }
     /* alert on eventClick */
     $scope.alertOnEventClick = function( date, jsEvent, view){
         $scope.alertMessage = (date.title + ' was clicked ');

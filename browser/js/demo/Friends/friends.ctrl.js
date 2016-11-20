@@ -1,5 +1,11 @@
 app.controller('FriendsController', function ($scope, $state) {
 	$scope.friends = friends.sort(compare);
+	$scope.findNearby = function () {
+		$state.go('demo.nearby')
+	}
+	$scope.leaderboard = function () {
+		$state.go('demo.Friend')
+	}
 })
 
 function compare(a,b) {
@@ -38,3 +44,4 @@ var friends = [
 		score: 23
 	}
 ]
+
