@@ -45,3 +45,17 @@ var friends = [
 	}
 ]
 
+var strangers = [];
+
+function findName () {
+	return 'Barbara';
+}
+
+function findDistance () {
+	return Math.random() * 10 + ' Miles Away'
+}
+
+function findAge () {
+	return Math.random() * 100 + ' Years Young'
+}
+
