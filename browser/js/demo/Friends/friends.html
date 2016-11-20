@@ -1,0 +1,18 @@
+<div id='leaderboard'>
+<div class='Leaderboard'>
+<div class="Title">Friends - Classes Taken</div>
+<div class=
+	<List>
+		<ul>
+			<Person class='Person' ng-repeat='person in friends'>
+				<li class="col-xs-3 btn Person">
+						<img class='Image' src={{person.image}} />
+					<div class="col-xs-3 Name">{{person.name}}</div>
+					<div class="Score col-xs-3">{{person.score}}</div>
+					<div class='Score col-xs-3 btn btn-success'>Message</div>
+				</li>
+			</Person>
+		</ul>
+	</List>
+</div>
+</div>
