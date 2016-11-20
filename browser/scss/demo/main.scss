@@ -22,6 +22,7 @@
 	background-color:#3f51b5;
 
 	img {
+		border-radius: 50px;
 		transform: scale(.9);
 	}
 
@@ -152,7 +153,15 @@ body {
 }
 
 .twitter-wrapper {
+	align-content: center;
 	background-color: white;
 	margin-top: 5px;
 	margin-left: 5px;
+	img {
+		border-radius: 80px;
+		height: 80px;
+		width: 80px;
+		padding-top: 5px;
+		padding-left: 5px;
+	}
 }
