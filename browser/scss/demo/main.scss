@@ -1,9 +1,12 @@
-#classCategoryMenu button {
-	padding: 15px 15px 15px 15px;
-	margin: 10px 10px 10px 10px;
-	width: 100%;
+#classCategoryMenu {
+	button {
+		padding: 15px 15px 15px 15px;
+		margin: 10px 10px 10px 10px;
+		width: 100%;
+		min-height: 75px;
+		font-size: 18px;
+	}
 }
-
 #typeMenu {
 	padding: 15px 15px 15px 15px;
 	margin: 10px 10px 10px 10px;
@@ -11,7 +14,7 @@
 }
 
 .class {
-	padding: 15px 15px 15px 15px;
+	padding: 10px 10px 10px 10px;
 	margin: 10px 10px 10px 10px;
 	border: 2px;
 }
@@ -27,7 +30,7 @@
 
 // Styles
 body {
-	background: #EEEEEE;
+	background: #C5CAE9;
 }
 
 #leaderboard {
@@ -39,7 +42,7 @@ body {
 
 .Leaderboard {
 	font-family: 'Roboto Mono', monospace;
-	width: 50%;
+	width: 80%;
 	background: #FFFFFF;
 	box-shadow: 0 5px 10px -5px rgba(black, .2);
 	
@@ -96,4 +99,24 @@ body {
 
 #supportButton {
 	float: right;
+}
+
+#typeMenu button {
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	border: 2px;
+	width: 100%;
+}
+
+.demoHead {
+	background-color: #3F51B5;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	text-align: left;
+	h2 {
+		color:white;
+		margin:auto;
+		display: inline;
+	}
 }

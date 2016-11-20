@@ -96,11 +96,12 @@ app.controller('LiveController', function ($scope, $compile, uiCalendarConfig) {
     /* config object */
     $scope.uiConfig = {
       calendar:{
+        defaultView: 'agendaDay',
         height: 450,
         editable: true,
         header:{
           left: 'title',
-          center: '',
+          center: 'agendaDay, month, agendaWeek',
           right: 'today prev,next'
         },
         eventClick: $scope.alertOnEventClick,
